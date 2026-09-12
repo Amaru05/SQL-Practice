@@ -1,0 +1,41 @@
+CREATE DATABASE CUSTOMERS_ORDERS_DB;
+
+USE CUSTOMERS_ORDERS_DB;
+
+CREATE TABLE Customers (
+    customer_id INT PRIMARY KEY,
+    customer_name VARCHAR(100)
+);
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    order_date DATE,
+    amount DECIMAL(10,2),
+
+    FOREIGN KEY (customer_id)
+        REFERENCES Customers(customer_id)
+);
+INSERT INTO Customers VALUES
+(1, 'Aarav'),
+(2, 'Diya'),
+(3, 'Kabir'),
+(4, 'Meera'),
+(5, 'Rahul');
+
+INSERT INTO Orders VALUES
+(501, 1, '2025-08-02', 800.00),
+(506, 1, '2025-08-07', 1200.00),
+(514, 1, '2025-08-19', 950.00),
+
+(602, 2, '2025-08-04', 650.00),
+(609, 2, '2025-08-13', 1050.00),
+(615, 2, '2025-08-25', 900.00),
+
+(701, 3, '2025-08-06', 1500.00),
+(708, 3, '2025-08-16', 1100.00),
+
+(801, 4, '2025-08-01', 500.00),
+(805, 4, '2025-08-10', 750.00),
+(812, 4, '2025-08-20', 1250.00),
+
+(901, 5, '2025-08-03', 900.00);
