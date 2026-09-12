@@ -1,0 +1,86 @@
+import pandas as pd
+class SolarManitanenceAnalyzer:
+  def create_inspection_df(self,inspection_data:list)->pd.DataFrame:
+    columns=[
+    "InspectionID",
+    "SiteId",
+    "Region",
+    "InspectionDate",
+    "OutputMWh",
+    "Downtimehours",
+    "MaintanenceStatus"
+  ]
+    return pd.DataFrame(inspection_date,columns=columns)
+
+    #operation 2
+  def clean_inspection_date(self,df:pd.DataFrame)->pd.DataFrame:
+    columns=[
+    "InspectionID",
+    "SiteId",
+    "Region",
+    "InspectionDate",
+    "OutputMWh",
+    "Downtimehours",
+    "MaintanenceStatus"
+  ]
+  cleaned=df[
+    df.dotna().all(axis=1)#Check across each row
+    &(df["OutputMWh"]>0)
+    &(df["DowntimeHours"]>=0)
+    &(df["MaintanenceStatus"].isin(["Completed","Scheduled"]))
+  ]
+  return cleaned[columns].copy().rest_index(drop=True)
+
+  #Operation 3
+
+  def add_attention_flag(
+    self,
+    df:pd.DataFrame,
+    downtime_threshold:float
+  )->pd.DataFrame:
+    result=df.copy()
+    result["NeedsAttention"]=(result["DowntimeHours"]>downtime_threshold).astype(int)
+
+    return result
+
+    #Operation 4
+  def site_performance_summary(
+    self,
+    df:pd.DataFrame
+  )->pd.DataFrame:
+    result=(
+      df.groupby("SiteID")
+        .agg(
+          InspectionCount=("InspectionID","Count"),
+          TotalOutputMWh=("OutputMWh","sum"),
+          AverageDowntime=("DowntimeHours","mean")
+        )
+        .reset_index()
+    )
+    result["AverageDownTime"]=result["AverageDownTime"].round(2)
+    return result.sort_values("SiteID").reset_index(drop=True)
+   #Operation 5
+  def low_output_sites(
+    self,df:pd.DataFrame,
+    output_threshold:float
+  )->pd.DataFrame:
+    result=(df.groupby("SiteID",as_index=false)["OutputMwh"].sum().rename(columns={"OutputMWh":"TotalOutputMWh"}))
+    result=result[result["TotalOutputMWh"]<output_threshold]
+  #operation 6
+  def regional_maintanence_cost(self,
+                               df:pd.DataFrame)->pd.DataFrame:
+    completed=df[df["MaintanenceStatus"]=="Completed"].copy()
+    completed["MaintanenceCost"]=(completed["DowntimeHours"]*250.0)
+    result=(completed.groupby("Region",as_index=False)["MaintanenceCost"].sum())
+    return result.sort_values("Region")reset_index(drop=True)
+    
+
+
+    
+
+
+  
+
+
+
+
