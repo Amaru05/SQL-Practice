@@ -1,0 +1,93 @@
+-- your code goes here
+-- Create Customers table
+CREATE TABLE Customers (
+    customer_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    phone VARCHAR(15)
+);
+
+-- Insert Customers
+INSERT INTO Customers (customer_id, name, email, phone) VALUES
+(201, 'John Doe', 'john@example.com', '1234567890'),
+(202, 'Jane Smith', 'jane@example.com', '2345678901'),
+(203, 'Emily Davis', 'emily@example.com', '3456789012'),
+(204, 'Mark Wilson', 'mark@example.com', '4567890123');
+
+
+-- Create Products table
+CREATE TABLE Products (
+    product_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    category VARCHAR(50),
+    price DECIMAL(10,2)
+);
+
+-- Insert Products
+INSERT INTO Products (product_id, name, category, price) VALUES
+(301, 'Laptop', 'Electronics', 1000.00),
+(302, 'Smartphone', 'Electronics', 600.00),
+(303, 'Office Chair', 'Furniture', 150.00),
+(304, 'Notebook Set', 'Stationery', 10.00);
+
+
+-- Create Orders table
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    order_date DATE,
+    total_amount DECIMAL(10,2),
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+);
+
+-- Insert Orders
+INSERT INTO Orders (order_id, customer_id, order_date, total_amount) VALUES
+(401, 201, '2023-08-01', 1010.00),
+(402, 202, '2023-08-03', 1600.00),
+(403, 203, '2023-08-04', 20.00),
+(404, 204, '2023-08-05', 750.00);
+
+
+-- Create Order_Items table
+CREATE TABLE Order_Items (
+    order_id INT,
+    product_id INT,
+    quantity INT,
+    unit_price DECIMAL(10,2),
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+-- Insert Order_Items
+INSERT INTO Order_Items (order_id, product_id, quantity, unit_price) VALUES
+(401, 301, 1, 1000.00),
+(401, 304, 1, 10.00),
+(402, 301, 1, 1000.00),
+(402, 302, 1, 600.00),
+(403, 304, 2, 10.00),
+(404, 303, 5, 150.00),
+(404, 304, 1, 10.00),
+(402, 303, 1, 150.00),
+(403, 302, 1, 600.00),
+(401, 303, 2, 150.00),
+(403, 301, 1, 1000.00),
+(404, 302, 1, 600.00);
+
+select
+o.order_id,
+c.name,
+o.total_amount
+from Orders o join Customers c on c.customer_id=o.customer_id
+where o.total_amount=(
+select max(total_amount)from Orders
+)
+  
+  
+  (OR)
+
+
+select 
+o.order_id,
+c.name,
+max(o.total_amount)
+from  Orders o join Customers c on c.customer_id=o.customer_id;
