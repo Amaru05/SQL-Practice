@@ -1,0 +1,84 @@
+-- your code goes here
+-- Create Departments table
+CREATE TABLE Departments (
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(100)
+);
+
+-- Insert Departments
+INSERT INTO Departments (department_id, department_name) VALUES
+(1, 'Computer Science'),
+(2, 'Mathematics'),
+(3, 'Physics'),
+(4, 'Literature');
+
+
+-- Create Students table
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES Departments(department_id)
+);
+
+-- Insert Students
+INSERT INTO Students (student_id, name, age, department_id) VALUES
+(101, 'Alice Smith', 20, 1),
+(102, 'Bob Johnson', 22, 2),
+(103, 'Clara Evans', 21, 3),
+(104, 'David Kumar', 23, 1);
+
+
+-- Create Courses table
+CREATE TABLE Courses (
+    course_id VARCHAR(10) PRIMARY KEY,
+    course_name VARCHAR(100),
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES Departments(department_id)
+);
+
+-- Insert Courses
+INSERT INTO Courses (course_id, course_name, department_id) VALUES
+('C101', 'Algorithms', 1),
+('C102', 'Linear Algebra', 2),
+('C103', 'Quantum Mechanics', 3),
+('C104', 'Shakespearean Drama', 4);
+
+
+-- Create Enrollments table
+CREATE TABLE Enrollments (
+    student_id INT,
+    course_id VARCHAR(10),
+    grade VARCHAR(5),
+    FOREIGN KEY (student_id) REFERENCES Students(student_id),
+    FOREIGN KEY (course_id) REFERENCES Courses(course_id)
+);
+
+-- Insert Enrollments
+INSERT INTO Enrollments (student_id, course_id, grade) VALUES
+(101, 'C101', 'A'),
+(101, 'C102', 'B+'),
+(101, 'C104', 'A-'),
+(102, 'C102', 'B'),
+(102, 'C103', 'A'),
+(103, 'C103', 'B-'),
+(103, 'C104', 'A'),
+(104, 'C101', 'A+'),
+(104, 'C103', 'B'),
+(104, 'C102', 'C+'),
+(104, 'C104', 'B'),
+(101, 'C103', 'B+');
+
+select
+s.student_id,
+s.name,
+c.course_id,
+c.course_name,
+e.grade,
+d.department_name
+from Enrollments e 
+join Students s on e.student_id=s.student_id
+join Courses c on c.course_id=e.course_id
+join Departments d on c.department_id=d.department_id
+group by s.student_id,s.name,c.course_id,c.course_name,e.grade;
