@@ -1,0 +1,26 @@
+import numpy as np
+def create_views_array(views_data:list)->np.ndarray:
+  return np.asarray(views_data,dtype=np.int64)
+def validate_views_array(view_array:np.ndarray)->bool:
+  # if views_array.size==0:
+  #   return False
+  # if not issubdtype(view_array.dtype,np.number):
+  #   return False
+  # return bool(np.all(views_array>=0))
+  if views_array.size==0:
+    retrun False
+  if not.issubdtype(view_array.dtype,np.number):
+    return False
+  return bool(np.all(view_array>=0))
+def compute_view_metrics(views_array:np.ndarray)->tuple:
+  total_views=int(np.sum(views_array))
+  average_views=round(float(np.mean(views_array)),2)
+  maximum_views=int(np.max(views_array))
+  return(total_views,average_views,maximum_views)
+
+def categorize_trend_levels(views_array:np.ndarray)->np.ndarray:
+  result=np.empty(views_array.shape,dtype=str)
+  result[views_array<3000]="Low trend"
+  result[(views_array>3000)&(views_array<5000)]="Moderate Trend"
+  result[views_array>=5000]="Viral Trend"
+  return result
