@@ -1,0 +1,101 @@
+order_id,order_date,customer_id,customer_name,product_category,product_name,brand,unit_price,quantity,payment_mode,city
+1001,2025-10-09,C016,Sneha Kumar,Grocery,Coffee Powder,Bru,425,2,Credit Card,Bangalore
+1002,2026-08-28,C028,Vivek Sharma,Grocery,Coffee Powder,Bru,425,1,UPI,Bangalore
+1003,2026-09-09,C002,Divya Verma,Fashion,Running Shoes,Nike,3499,5,Credit Card,Madurai
+1004,2026-08-27,C018,Divya Lakshmi,Electronics,Smart Watch,Noise,2999,1,Credit Card,Coimbatore
+1005,2025-08-09,C049,Rohit Singh,Beauty,Face Wash,Nivea,299,3,UPI,Bangalore
+1006,2025-12-19,C039,Sneha Menon,Electronics,Smart Watch,Noise,2999,3,UPI,Pune
+1007,2026-01-23,C006,Sneha Das,Fashion,Backpack,Puma,1799,5,Debit Card,Trichy
+1008,2025-07-16,C046,Keerthana T,Home Appliances,Air Fryer,Philips,6999,1,UPI,Hyderabad
+1009,2025-08-27,C007,Meena Sharma,Electronics,Power Bank,Mi,999,4,Debit Card,Pune
+1010,2026-01-15,C023,Keerthana Singh,Grocery,Coffee Powder,Bru,425,2,Debit Card,Bangalore
+1011,2025-09-08,C011,Anjali Verma,Electronics,Headphones,Sony,4999,4,Cash,Delhi
+1012,2025-11-29,C050,Vivek R,Home Appliances,Air Fryer,Philips,6999,1,Credit Card,Chennai
+1013,2025-10-02,C005,Sanjay P,Electronics,Power Bank,Mi,999,2,Net Banking,Kochi
+1014,2026-04-15,C010,Akhil P,Fashion,Running Shoes,Nike,3499,3,Credit Card,Hyderabad
+1015,2025-09-27,C048,Vivek Verma,Fashion,T-Shirt,Adidas,1199,5,Cash,Trichy
+1016,2025-05-22,C033,Keerthana R,Electronics,Smart Watch,Noise,2999,4,UPI,Chennai
+1017,2025-06-13,C044,Sneha Singh,Beauty,Shampoo,Dove,499,4,Net Banking,Bangalore
+1018,2026-04-25,C034,Naveen T,Electronics,Smart Watch,Noise,2999,3,Net Banking,Chennai
+1019,2026-07-04,C049,Sneha Raj,Grocery,Coffee Powder,Bru,425,3,Debit Card,Bangalore
+1020,2026-04-10,C001,Aishwarya Singh,Electronics,Bluetooth Speaker,JBL,2499,3,Net Banking,Mumbai
+1021,2025-11-02,C041,Sneha Patel,Fashion,Backpack,Puma,1799,5,Net Banking,Hyderabad
+1022,2025-06-15,C035,Keerthana Nair,Home Appliances,Electric Kettle,Prestige,1499,5,UPI,Trichy
+1023,2025-04-25,C024,Akhil Kumar,Beauty,Face Wash,Nivea,299,3,Credit Card,Chennai
+1024,2025-03-29,C047,Harini Sharma,Fashion,Running Shoes,Nike,3499,4,UPI,Madurai
+1025,2026-05-02,C036,Vikram Singh,Electronics,Power Bank,Mi,999,2,Debit Card,Madurai
+1026,2025-08-05,C035,Surya P,Beauty,Shampoo,Dove,499,2,Debit Card,Coimbatore
+1027,2026-06-14,C029,Keerthana Lakshmi,Grocery,Coffee Powder,Bru,425,1,Credit Card,Hyderabad
+1028,2026-08-26,C036,Sanjay Kumar,Electronics,Keyboard,Dell,1299,2,Net Banking,Hyderabad
+1029,2025-03-02,C015,Rahul V,Electronics,Wireless Mouse,Logitech,799,1,UPI,Kochi
+1030,2025-10-13,C043,Pooja R,Electronics,Keyboard,Dell,1299,4,Credit Card,Madurai
+1031,2026-04-30,C016,Harini T,Home Appliances,Electric Kettle,Prestige,1499,4,Cash,Hyderabad
+1032,2026-03-18,C023,Sneha Raj,Electronics,Keyboard,Dell,1299,4,Cash,Pune
+1033,2025-04-11,C004,Priya Raj,Beauty,Shampoo,Dove,499,4,Debit Card,Bangalore
+1034,2026-07-04,C029,Karthik R,Fashion,Running Shoes,Nike,3499,2,Cash,Mumbai
+1035,2025-03-19,C029,Manoj R,Electronics,Bluetooth Speaker,JBL,2499,5,UPI,Chennai
+1036,2025-01-16,C006,Vivek Patel,Grocery,Coffee Powder,Bru,425,2,Credit Card,Coimbatore
+1037,2026-02-15,C004,Akhil R,Home Appliances,Mixer Grinder,Philips,3299,2,Cash,Chennai
+1038,2026-04-11,C019,Rohit Das,Electronics,Smart Watch,Noise,2999,4,Net Banking,Pune
+1039,2025-08-11,C004,Karthik S,Home Appliances,Electric Kettle,Prestige,1499,5,Net Banking,Chennai
+1040,2025-02-21,C038,Sanjay Kumar,Fashion,T-Shirt,Adidas,1199,4,Net Banking,Madurai
+1041,2025-03-24,C012,Priya Verma,Home Appliances,Electric Kettle,Prestige,1499,1,Net Banking,Bangalore
+1042,2025-05-03,C037,Divya P,Grocery,Coffee Powder,Bru,425,2,Net Banking,Trichy
+1043,2026-03-06,C043,Surya Sharma,Electronics,Wireless Mouse,Logitech,799,5,Net Banking,Madurai
+1044,2025-11-18,C016,Rohit R,Beauty,Face Wash,Nivea,299,3,Cash,Mumbai
+1045,2025-11-20,C049,Meena Lakshmi,Grocery,Coffee Powder,Bru,425,1,UPI,Pune
+1046,2025-03-17,C035,Harini Sharma,Electronics,Headphones,Sony,4999,2,Net Banking,Delhi
+1047,2025-03-12,C016,Keerthana Das,Home Appliances,Electric Kettle,Prestige,1499,3,Debit Card,Mumbai
+1048,2025-11-06,C040,Vivek V,Home Appliances,Mixer Grinder,Philips,3299,5,UPI,Madurai
+1049,2025-05-18,C017,Sneha Das,Electronics,Bluetooth Speaker,JBL,2499,1,UPI,Madurai
+1050,2026-09-12,C014,Rohit S,Home Appliances,Electric Kettle,Prestige,1499,3,Credit Card,Delhi
+1051,2025-02-22,C006,Akhil S,Fashion,Backpack,Puma,1799,4,Debit Card,Chennai
+1052,2025-05-14,C041,Sanjay Nair,Electronics,Wireless Mouse,Logitech,799,3,Credit Card,Pune
+1053,2025-01-10,C008,Aishwarya Verma,Fashion,Backpack,Puma,1799,1,Credit Card,Madurai
+1054,2026-07-20,C010,Keerthana T,Electronics,Wireless Mouse,Logitech,799,4,Credit Card,Chennai
+1055,2025-02-10,C023,Keerthana Das,Electronics,Bluetooth Speaker,JBL,2499,2,Credit Card,Bangalore
+1056,2026-02-21,C040,Vivek Das,Beauty,Face Wash,Nivea,299,2,Credit Card,Mumbai
+1057,2026-02-27,C002,Anjali Das,Electronics,Power Bank,Mi,999,2,Debit Card,Coimbatore
+1058,2025-06-13,C045,Divya S,Electronics,Power Bank,Mi,999,1,Cash,Chennai
+1059,2025-07-24,C030,Akhil R,Beauty,Shampoo,Dove,499,3,Debit Card,Hyderabad
+1060,2025-07-17,C026,Arun Raj,Fashion,Running Shoes,Nike,3499,3,Debit Card,Bangalore
+1061,2026-06-06,C026,Rohit Menon,Electronics,Power Bank,Mi,999,5,Debit Card,Chennai
+1062,2026-08-18,C017,Rohit Singh,Electronics,Keyboard,Dell,1299,1,UPI,Trichy
+1063,2025-11-18,C028,Keerthana V,Electronics,Smart Watch,Noise,2999,5,Net Banking,Bangalore
+1064,2025-09-18,C003,Harini R,Electronics,Smart Watch,Noise,2999,4,UPI,Madurai
+1065,2025-07-21,C024,Vivek Raj,Home Appliances,Air Fryer,Philips,6999,4,UPI,Kochi
+1066,2025-05-08,C047,Sanjay Raj,Electronics,Headphones,Sony,4999,3,Net Banking,Delhi
+1067,2026-02-17,C045,Aishwarya Menon,Grocery,Coffee Powder,Bru,425,3,Net Banking,Mumbai
+1068,2026-01-24,C044,Aishwarya Raj,Fashion,Running Shoes,Nike,3499,2,Net Banking,Trichy
+1069,2025-01-01,C020,Naveen Verma,Electronics,Bluetooth Speaker,JBL,2499,3,Credit Card,Coimbatore
+1070,2025-11-26,C030,Harini T,Electronics,Power Bank,Mi,999,4,Cash,Hyderabad
+1071,2025-06-23,C043,Akhil Nair,Fashion,Backpack,Puma,1799,1,Debit Card,Madurai
+1072,2025-04-06,C049,Surya Menon,Grocery,Coffee Powder,Bru,425,2,Debit Card,Hyderabad
+1073,2025-01-26,C003,Karthik Singh,Electronics,Power Bank,Mi,999,2,Cash,Trichy
+1074,2026-03-01,C041,Rahul Lakshmi,Beauty,Shampoo,Dove,499,5,Credit Card,Coimbatore
+1075,2025-06-01,C042,Naveen R,Home Appliances,Mixer Grinder,Philips,3299,1,UPI,Coimbatore
+1076,2026-06-15,C030,Anjali Nair,Fashion,Running Shoes,Nike,3499,1,Net Banking,Hyderabad
+1077,2025-05-17,C030,Sneha Lakshmi,Home Appliances,Air Fryer,Philips,6999,5,Net Banking,Trichy
+1078,2026-06-01,C028,Manoj T,Beauty,Face Wash,Nivea,299,5,Cash,Mumbai
+1079,2025-09-23,C049,Akhil Lakshmi,Fashion,T-Shirt,Adidas,1199,2,Debit Card,Madurai
+1080,2026-03-27,C005,Divya S,Home Appliances,Mixer Grinder,Philips,3299,3,Credit Card,Delhi
+1081,2026-07-08,C006,Sanjay Das,Beauty,Face Wash,Nivea,299,2,Credit Card,Hyderabad
+1082,2025-08-08,C005,Vikram V,Electronics,Smart Watch,Noise,2999,4,Cash,Kochi
+1083,2025-03-05,C014,Manoj P,Fashion,Backpack,Puma,1799,4,Cash,Trichy
+1084,2026-08-13,C025,Arun Patel,Fashion,T-Shirt,Adidas,1199,4,UPI,Kochi
+1085,2026-03-06,C035,Naveen Patel,Electronics,Bluetooth Speaker,JBL,2499,5,Net Banking,Hyderabad
+1086,2026-03-23,C032,Divya S,Home Appliances,Mixer Grinder,Philips,3299,1,Cash,Kochi
+1087,2025-06-19,C030,Naveen V,Grocery,Coffee Powder,Bru,425,2,Net Banking,Madurai
+1088,2026-08-01,C043,Naveen T,Electronics,Wireless Mouse,Logitech,799,1,UPI,Coimbatore
+1089,2025-02-21,C017,Manoj Singh,Home Appliances,Electric Kettle,Prestige,1499,4,Debit Card,Hyderabad
+1090,2026-01-24,C018,Sanjay Menon,Home Appliances,Mixer Grinder,Philips,3299,4,Debit Card,Bangalore
+1091,2026-07-07,C004,Arun V,Home Appliances,Mixer Grinder,Philips,3299,3,Credit Card,Bangalore
+1092,2025-02-01,C016,Priya Nair,Electronics,Power Bank,Mi,999,2,UPI,Trichy
+1093,2026-04-30,C043,Divya Singh,Home Appliances,Electric Kettle,Prestige,1499,1,Net Banking,Hyderabad
+1094,2026-01-13,C011,Rohit Nair,Home Appliances,Mixer Grinder,Philips,3299,5,Net Banking,Bangalore
+1095,2025-04-21,C038,Anjali S,Electronics,Power Bank,Mi,999,1,Debit Card,Trichy
+1096,2025-07-23,C005,Naveen P,Grocery,Coffee Powder,Bru,425,5,Credit Card,Bangalore
+1097,2026-09-07,C008,Meena Patel,Fashion,T-Shirt,Adidas,1199,5,UPI,Kochi
+1098,2026-01-15,C005,Aishwarya Raj,Fashion,Backpack,Puma,1799,5,Debit Card,Chennai
+1099,2026-05-17,C007,Aishwarya Patel,Beauty,Shampoo,Dove,499,4,Debit Card,Pune
+1100,2025-06-30,C047,Vikram P,Fashion,T-Shirt,Adidas,1199,5,Debit Card,Trichy
